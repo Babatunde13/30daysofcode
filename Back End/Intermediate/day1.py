@@ -12,7 +12,7 @@ def scrabble(str1: str, str2: str) -> bool:
 
     @author: Babatunde Koiki
 
-    Created on: 01-01-202
+    Created on: 01-05-2020
     '''
     for i in str2:
         if i not in str1:
