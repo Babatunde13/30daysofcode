@@ -25,4 +25,4 @@ def myFunction(num: int) -> int:
 print(myFunction(43)) # 2
 print(myFunction(23413)) # 3
 print(myFunction(0)) # 0
-print(myFunction(-1)) # AssertionError: Number must be positive
+print(myFunction(-12)) # AssertionError: Number must be positive
