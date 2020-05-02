@@ -11,8 +11,8 @@ def myFunction(num: int) -> int:
     @author: Babatunde Koiki
     Created on: 02-05-2020
     '''
-    if num < 0:
-         assert num > 0, 'Number must be positive'
+   
+    assert num > 0, 'Number must be positive'
     count = 0
     while len(str(num)) > 1:
         i = 1
@@ -25,3 +25,4 @@ def myFunction(num: int) -> int:
 print(myFunction(43)) # 2
 print(myFunction(23413)) # 3
 print(myFunction(0)) # 0
+print(myFunction(-1)) # AssertionError: Number must be positive
