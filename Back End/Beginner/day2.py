@@ -1,4 +1,4 @@
-def myFunction(text):
+def myFunction(text: str) -> bool:
     '''
     Function that checks if a text is palindrome.
     A palindrome text is one that is same as it's reversed text after removing the spaces.
@@ -16,5 +16,5 @@ def myFunction(text):
         return True
     return False
 
-print(myFunction('Howdy'))
-print(myFunction('madam'))
+print(myFunction('Howdy')) # False
+print(myFunction('madam')) # True
