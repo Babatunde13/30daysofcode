@@ -15,3 +15,10 @@ def myPackaging(numOfDigits: int, num: int) -> str:
   
   return '0' * (numOfDigits - len(str(num)))+ str(num) if len(str(num)) < numOfDigits else str(num)
 
+print(myPackaging(5, 22)) # 00022
+print(myPackaging(1, 22)) # 22
+print(myPackaging(2, 22)) # 22
+print(myPackaging(7, 22)) # 0000022
+print(myPackaging.__doc__)
+
+
