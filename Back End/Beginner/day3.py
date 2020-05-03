@@ -15,6 +15,7 @@ def Santa(numOfSibling: int, numOfSweet: int) -> str:
   '''
   return 'give away' if numOfSweet % numOfSibling == 0 else 'eat them yourself'
 
-# print(Santa(3, 9))
-# print(Santa(3, 8))
-# print(Santa(4, 7))
+print(Santa(3, 9))
+print(Santa(3, 8))
+print(Santa(4, 7))
+print(Santa.__doc__)
