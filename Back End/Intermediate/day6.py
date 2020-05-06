@@ -1,4 +1,15 @@
 def Atongue(string: str) -> str:
+    '''
+    A function that encrypts a text in a particular order
+    It shifts the following word by index of 3 'aiyeou', and this by index of 10 'bkxznhdcwgpvjqtsrlmf'.
+
+    Parameter: string, str. Text to decrypt
+
+    Returns: The decrypted text
+
+    @author: Babatunde Koiki
+    Created on: 06-05-2020
+    '''
     vowel = 'aiyeou'
     consonant = 'bkxznhdcwgpvjqtsrlmf'
     new_string = ''
