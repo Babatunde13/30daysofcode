@@ -7,6 +7,9 @@ def Psum(list1: list, list2: list) -> int:
                 list2: list
 
     Returns: The sum of element-wise product of two lists
+
+     @author: Babatunde Koiki
+    Created on: 07-05-2020
     '''
     assert type(list1)==type(list2)==int and all(isinstance(x, int) for x in list1) and all(isinstance(x, int) for x in list2), 'Invalid input'
     return sum(map(lambda x, y: x*y, list1, list2))
