@@ -5,4 +5,4 @@ def count(num: int) -> int:
     @author: Babatunde Koiki
     Created on: 08-05-2020
     '''
-    return 'Invalid, number can't be negative' if num < 0 else int(bin(num)[2:].count('1'))
+    return "Invalid, number can't be negative" if num < 0 else int(bin(num)[2:].count('1'))
