@@ -26,7 +26,7 @@ def list():
     with open('forms.txt', 'r') as f:
         data = [l for l in f.readlines()]
     
-    return render_template('list.html', words=data)
+    return ''.join(data)
 
 @app.route('/delete/')
 def delete():
