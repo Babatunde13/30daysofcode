@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Best Movie</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favico.jpg') }}" type="image/x-icon">
+</head>
+<body>
+    <h3>My best Movie is {{best}}</h3>
+    <span class="image">
+        <img src="{{url_for('static', filename='sec.jpg')}}" alt="Best Movie" sizes="" srcset="">
+    </span>
+    <span class="image"> 
+        <img src="{{url_for('static', filename='best-movie.jpg')}}" alt="Best Movie" sizes="" srcset="" >
+    </span>
+    <p>You want to check it out,  <a target="_blank" href="https://www.youtube.com/watch?v=rBxcF-r9Ibs">click here</a></p>
+    <p>
+        Jumanji: The Next Level is a 2019 American fantasy adventure comedy film directed by Jake Kasdan
+         and co-written by Kasdan, Jeff Pinkner, and Scott Rosenberg. It is a sequel to 2017's 
+         Jumanji: Welcome to the Jungle, 
+        is the second follow-up to 1995's Jumanji, and is the fourth installment in the Jumanji franchise.
+    </p>
+    <p>
+        When Spencer goes back into the fantastical world of Jumanji, pals Martha, 
+        Fridge and Bethany re-enter the game to bring him home. But the game is now broken -- and 
+        fighting back. Everything the friends know about Jumanji is about to change, 
+        as they soon discover there's more obstacles and more danger to overcome.
+    </p>
+    <p>
+        <strong>Release date:</strong>  13 December 2019 (Nigeria) <br>
+        <strong>Director: </strong> Jake Kasdan <br>
+        <strong>Box office: </strong> 796.6 million USD <br>
+        <strong>Production company: </strong> Columbia Pictures <br>
+        <strong>Producers:</strong> Dwayne Johnson, Jake Kasdan, Dany Garcia, Hiram Garcia, William Teitler, Matt Tolmach
+    </p>
+</body>
+</html>
