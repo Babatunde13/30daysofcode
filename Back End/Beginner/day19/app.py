@@ -21,6 +21,7 @@ def home():
 
 @app.route('/form/', methods=['POST', 'GET'])
 def form():
+    id = len(data)
     if request.method == 'POST':
         obj = {
             "id": len(data)+1,
@@ -50,7 +51,7 @@ def form():
         flash('Added successfully')
         users=[d['name'] for d in data]
         return render_template('home.html', id=len(data), users=users)
-    return render_template('form.html')
+    return render_template('form.html', id=id)
 
 @app.route('/delete/', methods=['POST', 'GET'])
 def delete():
