@@ -91,7 +91,7 @@ body {
       border: 0.5% solid;
       border-radius: 1em;
       border-top: 50px;
-      margin: 10em 13em 50px 13em;
+      margin: 30em 13em 50px 13em;
     
     }
     .sign-in-section p {
@@ -120,12 +120,13 @@ body {
       border: 1px solid #AE00FF;
     }
     .btn {
+      align-self: center;
       padding: 15px;
       font-size: 1em;
       width: 50%;
       border-radius: 25px;
       border: none;
-      margin: 20px 0px;
+      margin: 100px 0px;
     }
     .btn-signin {
       cursor: pointer;

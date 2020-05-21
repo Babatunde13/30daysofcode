@@ -257,15 +257,15 @@ def populate():
 @app.route('/login/', methods=['POST', 'GET'])
 def login():
   if request.method == 'POST':
+    message  = {
+                "message" :"username or email is incorrect" 
+              }
     for d in data:
       if d['name']==request.form['name'] and d['email']==request.form['email']:
         name = d['name']
         message = {
                     "message" :f"logged in as {name}",
                 }
-    message  = {
-                "message" :"username or email is incorrect" 
-              }
     return render_template('status.html', message=message)
   return render_template('login.html')
 
