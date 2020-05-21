@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template, flash, jsonify
+from flask import Flask, request, render_template, flash, jsonify, redirect, url_for
 import json
 
 app = Flask(__name__)
@@ -253,6 +253,21 @@ def populate():
     data.extend(new_)
     save_db(data)
     return jsonify(data)
+  
+@app.route('/login/', methods=['POST', 'GET'])
+def login():
+  if request.method == 'POST':
+    for d in data:
+      if d['name']==request.form['name'] and d['email']==request.form['email']:
+        name = d['name']
+        message = {
+                    "message" :f"logged in as {name}",
+                }
+    message  = {
+                "message" :"username or email is incorrect" 
+              }
+    return render_template('status.html', message=message)
+  return render_template('login.html')
 
 @app.route('/signup/', methods=['POST', 'GET'])
 def form():
@@ -266,9 +281,7 @@ def form():
         }
         data.append(obj)
         save_db(data)
-        flash('Added successfully')
-        users=[d['name'] for d in data]
-        return render_template('home.html', id=len(data), users=users)
+        return 'Data Successfully added'
     return render_template('form.html', id=id)
 
 @app.route('/delete/', methods=['POST', 'GET'])
@@ -283,7 +296,10 @@ def delete():
             save_db(data)
             return 'Business successfully removed'
     return render_template('delete.html')
-
+  
+@app.route('/status/')
+def status():
+  return render_template('status.html')
 
 
 

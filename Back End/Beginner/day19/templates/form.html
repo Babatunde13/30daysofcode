@@ -5,24 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add New Form</title>
     <link rel="shortcut icon" href="{{ url_for('static', filename='favico.jpg') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
 </head>
 <body>
     <form method="post">
         <p>ID of the business is : {{ id+1 }}</p>
-        <div>
+        <div class="form-field">
             <label for="name">Full Name</label>
             <input type="text" name="name" id="">
         </div>
-        <div>
+        <div class="form-field">
             <label for="">User Name</label>
             <input type="text" name="username" id="">
         </div>
-        <div>
+        <div class="form-field">
             <label for="">Email</label>
             <input type="text" name="email" id="">
-        </div>
-       
-        <input type="submit" value="Submit">
+        </div class="form-field">
+        <input type="submit" class="btn btn-signin" value="Submit">
     </form>
 </body>
 </html>
