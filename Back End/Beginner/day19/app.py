@@ -16,10 +16,11 @@ def save_db(data):
 
 @app.route('/')
 def home():
-    users=[d['name'] for d in data]
-    return render_template('home.html', id=len(data), users=users)
+    # users=[d['name'] for d in data]
+    return jsonify(data)
+    # return render_template('home.html', id=len(data), users=users)
 
-@app.route('/form/', methods=['POST', 'GET'])
+@app.route('/populate/', methods=['POST', 'GET'])
 def form():
     id = len(data)
     if request.method == 'POST':
@@ -65,6 +66,8 @@ def delete():
             save_db(data)
             return 'Business successfully removed'
     return render_template('delete.html')
+
+
 
 
 if __name__ == "__main__":
