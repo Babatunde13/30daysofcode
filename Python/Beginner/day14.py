@@ -11,14 +11,3 @@ def Triangle_no(num: int) -> bool:
     assert type(num) == int and num >0
     return not (8*num+1)**0.5 % 1 > 0
 
-def error(func, num):
-    try:
-        return func(num)
-    except AssertionError: return 1
-Triangle_no(12)==False # 2 points
-error(Triangle_no, -4)== 1# 2 points
-error(Triangle_no, 'a')== 1 # 2 points
-Triangle_no(1234)==False # 2 points
-Triangle_no(-11)==1 # 2 points
-Triangle_no.__doc__ != None # 2 points
-Triangle_no(6)==True

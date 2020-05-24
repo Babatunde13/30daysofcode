@@ -10,6 +10,4 @@ def string_test(s):
         if i.islower(): l += 1
     return f'Number of Lowercase letters is {l}.\nNumber of Uppercase letters is {u}.'
 
-print(string_test('The quick Brown Fox'))
-print(string_test('My name is Sodiq Agunbiade, I am your tutor for this cohort'))
-print(string_test('You are a Student of 30daysofcode'))
+
