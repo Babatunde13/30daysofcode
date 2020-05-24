@@ -12,7 +12,7 @@ class Person:
     def printUser(self):
         return f'{self.name} is {self.age} years old.'
     
-Person('Babatunde', 20).name=='Babatunde' # 2 points
+Person('Babatunde', 20).__dict__=={'name': 'Babatunde', 'age': 20} # 2 points
 Person('Babatunde', 20).addAge(10)=='Babatunde will be 30 in the next 10 years' # 2 points
 Person('Babatunde', 20).age==20 # 2 points
 Person('Babatunde', 20).printUser()=='Babatunde is 20 years old.' # 2 points

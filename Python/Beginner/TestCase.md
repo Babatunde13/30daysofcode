@@ -139,7 +139,7 @@ circle(7.5).computeArea()=='177cm2'# 3 points<br>
 None
 
 ## DAY 25 TEST CASE
-Person('Babatunde', 20).name=='Babatunde' # 2 points<br>
+Person('Babatunde', 20).__dict__=={'name': 'Babatunde', 'age': 20} # 2 points<br>
 Person('Babatunde', 20).addAge(10)=='Babatunde will be 30 in the next 10 years' # 2 points<br>
 Person('Babatunde', 20).age==20 # 2 points<br>
 Person('Babatunde', 20).printUser()=='Babatunde is 20 years old.' # 2 points<br>
