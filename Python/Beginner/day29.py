@@ -26,5 +26,5 @@ Person('Babatunde', 2).getGender()=='Human' # 2 points
 Male('Babatunde', 20).age_n(30)==30 # 2 points
 Female('Sayo', 30).age_n(30)==60 # 2 points
 Male('Ade', 40).getGender()=='male' # 2 points
-error(Male, 'Ba', -2) # 3 points
-error(Female, True, 10) # 3 points
+error(Male, 'Ba', -2)==1 # 3 points
+error(Female, True, 10)==1 # 3 points
