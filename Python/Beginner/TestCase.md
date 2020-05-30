@@ -210,9 +210,15 @@ error(Female, True, 10) # 3 points<br>
 ## DAY 30 TEST CASE
 # 1 point for submission
 a = ArrayOperation()
+
 print(a.twoSum((10,20,10,40,50,60,70), 50)==(2, 3)) #2 points
+
 print(a.twoSum([10,20,10,40,50,60,70], 50)==(2, 3)) #2 points
+
 print(a.threeSum((10,20,10,40,50,60,70))==[]) #2 points
+
 b = ArrayOperation()
+
 print(b.threeSum([-25, -10, -7, -3, 2, 4, 8, 10])==[[-10, 2, 8], [-7, -3, 10]]) #3 points
+
 print(b.threeSum([-25, -10, -7, -3, 2, 4, 8, 10, 6, -9, 4, -10, 7, 65, -55])==[[-55, -10, 65], [-10, 2, 8], [-10, 4, 6], [-9, 2, 7], [-7, -3, 10]]) #5 points
